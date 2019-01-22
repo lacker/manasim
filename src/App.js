@@ -1,6 +1,24 @@
 import React, { Component } from "react";
 import "./App.css";
 
+// Left and right are maps from thing -> count
+// Zeros are removed
+function subtract(left, right) {
+  let answer = {};
+  for (let key in left) {
+    let r = right[key] || 0;
+    let a = left[key] - r;
+    if (a < 0) {
+      throw new Error("sets should not have negative things");
+    }
+    answer[key] = a;
+  }
+  
+  // TODO: check no keys in right are missing entirely from left
+  
+  return answer;
+}
+
 export default function app() {
   return (
     <div className="App">

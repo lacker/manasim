@@ -14,7 +14,12 @@ function subtract(left, right) {
     answer[key] = a;
   }
   
-  // TODO: check no keys in right are missing entirely from left
+  // check no keys in right are missing entirely from left
+  for (let key in right) {
+    if (!answer[key]) {
+      throw new Error("key " + key " is in right but not in left"); 
+    }
+  }
   
   return answer;
 }

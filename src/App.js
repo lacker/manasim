@@ -24,6 +24,15 @@ function subtract(left, right) {
   return answer;
 }
 
+// Adds up all values
+function size(map) {
+  let answer = 0;
+  for (let value of map) {
+    answer += value; 
+  }
+  return answer;
+}
+
 export default function app() {
   return (
     <div className="App">

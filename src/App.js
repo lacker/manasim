@@ -33,6 +33,19 @@ function size(map) {
   return answer;
 }
 
+// Chooses something randomly from a map of item -> count
+function choice(map) {
+  let s = size(map);
+  let index = Math.floor(Math.random() * s);
+  for (let item in map) {
+    index -= map[item];
+    if (index < 0) {
+      return item; 
+    }
+  }
+  throw new Error("bug in choice");
+}
+
 export default function app() {
   return (
     <div className="App">

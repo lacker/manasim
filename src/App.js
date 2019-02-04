@@ -11,7 +11,9 @@ function subtract(left, right) {
     if (a < 0) {
       throw new Error("sets should not have negative things");
     }
-    answer[key] = a;
+    if (a > 0) {
+      answer[key] = a;
+    }
   }
   
   // check no keys in right are missing entirely from left

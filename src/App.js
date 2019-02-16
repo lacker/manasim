@@ -48,6 +48,11 @@ function choice(map) {
   throw new Error("bug in choice");
 }
 
+// Returns newMap, item pair
+function randomPop(map) {
+  // TODO: implement
+}
+
 export default function app() {
   return (
     <div className="App">

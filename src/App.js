@@ -50,6 +50,7 @@ function choice(map) {
 
 // Returns newMap, item pair
 function randomPop(map) {
+  let item = choice(map);
   // TODO: implement
 }
 

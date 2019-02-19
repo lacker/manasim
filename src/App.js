@@ -51,7 +51,10 @@ function choice(map) {
 // Returns newMap, item pair
 function randomPop(map) {
   let item = choice(map);
-  // TODO: implement
+  let subtrahend = {};
+  subtrahend[item] = 1;
+  let newMap = subtract(map, subtrahend);
+  return [newMap, item];
 }
 
 export default function app() {

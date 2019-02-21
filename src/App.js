@@ -3,7 +3,9 @@ import "./App.css";
 
 function add(left, right) {
   let answer = {};
-  // TODO
+  for (let key in left) {
+    // TODO
+  }
 }
 
 // Left and right are maps from thing -> count

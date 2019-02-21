@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
 
+function add(left, right) {
+  let answer = {};
+  // TODO
+}
+
 // Left and right are maps from thing -> count
 // Zeros are removed
 function subtract(left, right) {

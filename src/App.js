@@ -4,7 +4,10 @@ import "./App.css";
 function add(left, right) {
   let answer = {};
   for (let key in left) {
-    // TODO
+    answer[key] = left[key];
+  }
+  for (let key in right) {
+    // TODO 
   }
 }
 

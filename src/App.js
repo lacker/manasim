@@ -7,8 +7,9 @@ function add(left, right) {
     answer[key] = left[key];
   }
   for (let key in right) {
-    // TODO 
+    answer[key] = (answer[key] || 0) + right[key];
   }
+  return answer;
 }
 
 // Left and right are maps from thing -> count

@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
 
+const MONO_BLUE = {
+  "opt": 4,
+  "land": 20,
+  "blank": 36,
+};
+
 function add(left, right) {
   let answer = {};
   for (let key in left) {

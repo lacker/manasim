@@ -74,6 +74,11 @@ function randomPop(map) {
   return [newMap, item];
 }
 
+function drawUntil(deck, f) {
+  let newDeck, item = randomPop(deck);
+  // TODO
+}
+
 export default function app() {
   return (
     <div className="App">

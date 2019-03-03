@@ -55,6 +55,9 @@ function size(map) {
 // Chooses something randomly from a map of item -> count
 function choice(map) {
   let s = size(map);
+  if (s === 0) {
+    throw new Error("cannot choice from empty map");
+  }
   let index = Math.floor(Math.random() * s);
   for (let item in map) {
     index -= map[item];

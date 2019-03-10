@@ -77,7 +77,10 @@ function randomPop(map) {
   return [newMap, item];
 }
 
+// Draws until f(items) is true
+// Returns newMap, items pair
 function drawUntil(deck, f) {
+  let [map, items] = [deck, []];
   let newDeck, item = randomPop(deck);
   // TODO
 }

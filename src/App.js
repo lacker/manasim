@@ -82,9 +82,10 @@ function randomPop(map) {
 function drawUntil(deck, f) {
   let [map, items] = [deck, []];
   while (!f(items)) {
-    let newDeck, item = randomPop(deck);
-    // TODO
+    let [map, item] = randomPop(deck);
+    items.push(item);
   }
+  return [map, items];
 }
 
 export default function app() {

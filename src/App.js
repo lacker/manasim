@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./App.css";
 
 const MONO_BLUE = {
-  "opt": 4,
-  "land": 20,
-  "blank": 36,
+  opt: 4,
+  land: 20,
+  blank: 36
 };
 
 function add(left, right) {
@@ -32,14 +32,14 @@ function subtract(left, right) {
       answer[key] = a;
     }
   }
-  
+
   // check no keys in right are missing entirely from left
   for (let key in right) {
     if (!answer[key]) {
-      throw new Error("key " + key " is in right but not in left"); 
+      throw new Error("key " + key + " is in right but not in left");
     }
   }
-  
+
   return answer;
 }
 
@@ -47,7 +47,7 @@ function subtract(left, right) {
 function size(map) {
   let answer = 0;
   for (let value of map) {
-    answer += value; 
+    answer += value;
   }
   return answer;
 }
@@ -62,7 +62,7 @@ function choice(map) {
   for (let item in map) {
     index -= map[item];
     if (index < 0) {
-      return item; 
+      return item;
     }
   }
   throw new Error("bug in choice");
@@ -91,7 +91,7 @@ function drawUntil(deck, f) {
 export default function app() {
   return (
     <div className="App">
-        <p>Hello mana simulation world.</p>
+      <p>Hello mana simulation world.</p>
     </div>
   );
 }

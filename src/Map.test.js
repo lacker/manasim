@@ -5,5 +5,5 @@ it("can add", () => {
   let right = { foo: 2 };
   let result = add(left, right);
 
-  // TODO: test stuff
+  expect(result.foo).toBe(3);
 });

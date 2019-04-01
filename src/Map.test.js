@@ -7,3 +7,7 @@ it("can add", () => {
 
   expect(result.foo).toBe(3);
 });
+
+it("can subtract", () => {
+  // TODO
+});

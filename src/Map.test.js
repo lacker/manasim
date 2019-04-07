@@ -9,5 +9,7 @@ it("can add", () => {
 });
 
 it("can subtract", () => {
+  let left = { foo: 2 };
+  let right = { foo: 1 };
   // TODO
 });

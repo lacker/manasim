@@ -1,4 +1,4 @@
-import { add } from "./Map";
+import { add, subtract } from "./Map";
 
 it("can add", () => {
   let left = { foo: 1 };
@@ -11,5 +11,6 @@ it("can add", () => {
 it("can subtract", () => {
   let left = { foo: 2 };
   let right = { foo: 1 };
+  let result = subtract(left, right);
   // TODO
 });

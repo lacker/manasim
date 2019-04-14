@@ -12,5 +12,6 @@ it("can subtract", () => {
   let left = { foo: 2 };
   let right = { foo: 1 };
   let result = subtract(left, right);
-  // TODO
+  
+  expect(result.foo).toBe(1);  
 });

@@ -15,3 +15,7 @@ it("can subtract", () => {
   
   expect(result.foo).toBe(1);  
 });
+
+it("can size", () => {
+  throw new Error("TODO: implement me");
+});

@@ -1,4 +1,4 @@
-import { add, subtract } from "./Map";
+import { add, size, subtract } from "./Map";
 
 it("can add", () => {
   let left = { foo: 1 };
@@ -17,5 +17,6 @@ it("can subtract", () => {
 });
 
 it("can size", () => {
-  throw new Error("TODO: implement me");
+  let map = { a: 1, b: 2 };
+  expect(size(map)).toBe(3);
 });

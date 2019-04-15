@@ -1,4 +1,4 @@
-import { add, size, subtract } from "./Map";
+import { add, choice, size, subtract } from "./Map";
 
 it("can add", () => {
   let left = { foo: 1 };
@@ -19,4 +19,10 @@ it("can subtract", () => {
 it("can size", () => {
   let map = { a: 1, b: 2 };
   expect(size(map)).toBe(3);
+});
+
+it("can choice", () => {
+  let map = { a: 1, b: 1, c: 1, d: 1000000000, e: 1, f: 1 };
+  let result = choice(map);
+  // TODO: expect
 });

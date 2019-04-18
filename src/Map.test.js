@@ -24,5 +24,5 @@ it("can size", () => {
 it("can choice", () => {
   let map = { a: 1, b: 1, c: 1, d: 1000000000, e: 1, f: 1 };
   let result = choice(map);
-  // TODO: expect
+  expect(result).toBe("d");
 });

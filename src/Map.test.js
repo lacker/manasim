@@ -1,4 +1,4 @@
-import { add, choice, size, subtract } from "./Map";
+import { add, choice, randomPop, size, subtract } from "./Map";
 
 it("can add", () => {
   let left = { foo: 1 };

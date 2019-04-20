@@ -26,3 +26,7 @@ it("can choice", () => {
   let result = choice(map);
   expect(result).toBe("d");
 });
+
+it(“can randomPop”, () => {
+  // TODO
+});

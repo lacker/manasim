@@ -80,3 +80,7 @@ export function drawUntil(deck, f) {
   }
   return [map, items];
 }
+
+export function randomDraw(map, num) {
+  // TODO
+}

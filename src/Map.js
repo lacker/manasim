@@ -82,5 +82,6 @@ export function drawUntil(deck, f) {
 }
 
 export function randomDraw(map, num) {
+  let answer = [];
   // TODO
 }

@@ -81,9 +81,11 @@ export function drawUntil(deck, f) {
   return [map, items];
 }
 
-export function randomDraw(map, num) {
+export function randomDraw(inputMap, num) {
+  let map = inputMap;
   let answer = [];
   while (answer.length < num) {
+    let [m, item] = randomPop(map);
     // TODO
   }
 }

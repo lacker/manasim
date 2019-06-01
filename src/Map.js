@@ -83,7 +83,6 @@ export function drawUntil(deck, f) {
 
 export function randomDraw(map, num) {
   let answer = [];
-  while (answer.length < num) {
-    // TODO
-  }
+  let done = () => (answer.length >= num);
+  // TODO
 }

@@ -81,8 +81,10 @@ export function drawUntil(deck, f) {
   return [map, items];
 }
 
-export function randomDraw(map, num) {
+// Draws num at random
+// Returns newMap, items pair
+export function randomDraw(deck, num) {
   let answer = [];
   let done = () => (answer.length >= num);
-  // TODO
+  return drawUntil(deck, done);
 }

@@ -39,3 +39,7 @@ it(“can randomPop”, () => {
   expect(size(map)).toBe(0);
   expect(() => map.randomPop()).toThrow();
 });
+
+it("can randomDraw", () => {
+
+});

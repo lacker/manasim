@@ -44,5 +44,7 @@ it(“can randomPop”, () => {
 it("can randomDraw", () => {
   let map = { a: 1, b: 2, c: 3, d: 4};
   let item = null;
-  // TODO
+  for (let i = 0; i < 10; i++) {
+    // TODO
+  }
 });

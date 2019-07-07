@@ -36,7 +36,7 @@ it(“can randomPop”, () => {
   expect(size(map)).toBe(2);
   [map, item] = randomPop(map);
   expect(size(map)).toBe(1);
-  [map, item] = map.randomPop();
+  [map, item] = randomPop(map);
   expect(size(map)).toBe(0);
   expect(() => map.randomPop()).toThrow();
 });
